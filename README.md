@@ -23,3 +23,23 @@ OPTIONS:
     -i, --infile <FILE>           A CSV Input File
     -o, --outfile <FILE>          A Mark Down Output File to write to
 ```
+
+
+## Example
+
+```
+Header 1, Header II, Header Three
+From my childhoods hour, I have not, been
+As others, were I have, not seen
+As, others saw - I could, not bring
+My, passions, from a common spring
+```
+
+
+| Header 1                |  Header II            |  Header Three         |
+|-------------------------|-----------------------|-----------------------|
+| From my childhoods hour |  I have not           |  been                 |
+| As others               |  were I have          |  not seen             |
+| As                      |  others saw - I could |  not bring            |
+| My                      |  passions             |  from a common spring |
+
