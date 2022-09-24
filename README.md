@@ -27,6 +27,8 @@ OPTIONS:
 
 ## Example
 
+Sample CSV input:
+
 ```
 Header 1, Header II, Header Three
 From my childhoods hour, I have not, been
@@ -35,6 +37,17 @@ As, others saw - I could, not bring
 My, passions, from a common spring
 ```
 
+Which renders to:
+```
+| Header 1                |  Header II            |  Header Three         |
+|-------------------------|-----------------------|-----------------------|
+| From my childhoods hour |  I have not           |  been                 |
+| As others               |  were I have          |  not seen             |
+| As                      |  others saw - I could |  not bring            |
+| My                      |  passions             |  from a common spring |
+```
+
+Which is markdown for:
 
 | Header 1                |  Header II            |  Header Three         |
 |-------------------------|-----------------------|-----------------------|
