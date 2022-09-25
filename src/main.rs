@@ -156,7 +156,7 @@ fn vec_to_string(data: Vec<String>) -> String {
 
 // Take the data and the lengths and pad accordingly
 // Adding a seperator row
-fn print_data(data: Vec<Vec<String>>, lengths: Vec<usize>) -> Vec<String> {
+fn print_data(data: &[Vec<String>], lengths: &Vec<usize>) -> Vec<String> {
     let mut retval: Vec<String> = Vec::new();
     // println!("Data Vec<Vec<String>> String, String");
     // println!("{:?}", data);
@@ -209,7 +209,7 @@ fn main() {
     // Read the CSV data
     match read_csv(&cfg["infile"], &mut data, &mut lengths) {
         Ok(()) => {
-            md = vec_to_string(print_data(data, lengths));
+            md = vec_to_string(print_data(&data, &lengths));
         }
         Err(e) => println!("Error: read_csv {}", e),
     };
