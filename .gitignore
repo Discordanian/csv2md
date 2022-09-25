@@ -1,2 +1,4 @@
 test
 smoke.csv
+Cargo.lock
+target/**
